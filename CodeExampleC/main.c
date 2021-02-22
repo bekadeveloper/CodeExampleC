@@ -42,19 +42,40 @@ int main() {
     
     // printf("Result: %.2f\n", res);
     
-    // ARRAYS
-    int array1[] = {1, 8, 3, 9123, 34};
-    printf("%d\n", array1[3]); // prints "9123"
+//    // ARRAYS
+//    int array1[] = {1, 8, 3, 9123, 34};
+//    printf("%d\n", array1[3]); // prints "9123"
+//
+//    float array2[] = {3.2f, 902.5f, 1.9f, 54.901f};
+//    printf("%.2f\n", array2[2]); // prints "1.90"
+//
+//    char array3[] = {'w', 'o', 'r', 'd'};
+//    printf("%c\n", array3[0]); // prints "w"
+//
+//    char array4[] = "Hello Swift!";
+//    printf("%c\n", array4[6]); // prints "S"
+//    printf("%s\n", array4);
     
-    float array2[] = {3.2f, 902.5f, 1.9f, 54.901f};
-    printf("%.2f\n", array2[2]); // prints "1.90"
+    // CONDITIONALS
+    int x = 19;
     
-    char array3[] = {'w', 'o', 'r', 'd'};
-    printf("%c\n", array3[0]); // prints "w"
+    if (x >= 10) {
+        printf("x is greater or equal to 10\n");
+    } else {
+        printf("x is smaller than 10\n");
+    }
     
-    char array4[] = "Hello Swift!";
-    printf("%c\n", array4[6]); // prints "S"
-    printf("%s\n", array4);
+    int y = 47;
+
+    switch (y) {
+        case 12:
+            printf("y is equal to 12\n");
+            break;
+
+        default:
+            printf("y is not equal to 12\n");
+            break;
+    }
     
     return 0 ;
 }
