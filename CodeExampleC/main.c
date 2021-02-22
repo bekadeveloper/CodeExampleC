@@ -56,26 +56,26 @@ int main() {
 //    printf("%c\n", array4[6]); // prints "S"
 //    printf("%s\n", array4);
     
-    // CONDITIONALS
-    int x = 19;
-    
-    if (x >= 10) {
-        printf("x is greater or equal to 10\n");
-    } else {
-        printf("x is smaller than 10\n");
-    }
-    
-    int y = 47;
-
-    switch (y) {
-        case 12:
-            printf("y is equal to 12\n");
-            break;
-
-        default:
-            printf("y is not equal to 12\n");
-            break;
-    }
+//    // CONDITIONALS
+//    int x = 19;
+//
+//    if (x >= 10) {
+//        printf("x is greater or equal to 10\n");
+//    } else {
+//        printf("x is smaller than 10\n");
+//    }
+//
+//    int y = 47;
+//
+//    switch (y) {
+//        case 12:
+//            printf("y is equal to 12\n");
+//            break;
+//
+//        default:
+//            printf("y is not equal to 12\n");
+//            break;
+//    }
     
     return 0 ;
 }
