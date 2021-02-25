@@ -5,8 +5,8 @@
 //  Created by Begzod Bakhriddinov on 21/02/21.
 //
 
-#include <stdio.h>
 #include <stdbool.h>
+#include "functions.h"
 
 int main() {
     
@@ -77,62 +77,69 @@ int main() {
 //            break;
 //    }
     
-    // LOOPS
-    for (int i = 10; i >= 0; i--) {
-
-        if (i == 0) {
-            printf("Boom!\n");
-            break;
-        }
-
-        printf("%d\n", i);
-    }
-
-    bool isCoder = true;
-    int number;
-
-    while (isCoder) {
-        printf("Are u coder? ");
-        scanf("%d", &number);
-
-        if (number == 1) {
-            isCoder = false;
-        }
-    }
-
-    bool isFavorite = true;
-    int num;
-    int favoriteNum = 17;
-
-    do {
-        printf("number? ");
-        scanf("%d", &num);
-
-        if (num == favoriteNum) {
-            printf("have a nice day!\n");
-            break;
-        }
-    } while (isFavorite);
+//    // LOOPS
+//    for (int i = 10; i >= 0; i--) {
+//
+//        if (i == 0) {
+//            printf("Boom!\n");
+//            break;
+//        }
+//
+//        printf("%d\n", i);
+//    }
+//
+//    bool isCoder = true;
+//    int number;
+//
+//    while (isCoder) {
+//        printf("Are u coder? ");
+//        scanf("%d", &number);
+//
+//        if (number == 1) {
+//            isCoder = false;
+//        }
+//    }
+//
+//    bool isFavorite = true;
+//    int num;
+//    int favoriteNum = 17;
+//
+//    do {
+//        printf("number? ");
+//        scanf("%d", &num);
+//
+//        if (num == favoriteNum) {
+//            printf("have a nice day!\n");
+//            break;
+//        }
+//    } while (isFavorite);
+//
+//    int array[] = {4, -2, 987, -123, 0, 239, 24};
+//
+//    for (int i = 0; i < 7; i++) {
+//        printf("%d ", array[i]);
+//    }
+//    printf("\n");
+//
+//    int min = array[0];
+//    int max = array[0];
+//
+//    for (int i = 0; i < 7; i++) {
+//        if (array[i] < min) {
+//            min = array[i];
+//        } else if (array[i] > max) {
+//            max = array[i];
+//        }
+//    }
+//
+//    printf("Min: %d\nMax: %d\n", min, max);
     
-    int array[] = {4, -2, 987, -123, 0, 239, 24};
+    // FUNCTIONS (refer to 'functions.h')
+    greeting();
     
-    for (int i = 0; i < 7; i++) {
-        printf("%d ", array[i]);
-    }
-    printf("\n");
+    printf("%d\n", add(56, 12));
     
-    int min = array[0];
-    int max = array[0];
-    
-    for (int i = 0; i < 7; i++) {
-        if (array[i] < min) {
-            min = array[i];
-        } else if (array[i] > max) {
-            max = array[i];
-        }
-    }
-    
-    printf("Min: %d\nMax: %d\n", min, max);
+    printf("%.2f\n", multiply(5, 9));
     
     return 0 ;
 }
