@@ -142,9 +142,18 @@ int main() {
 //
 //    printf("%.2f\n", multiply(5, 9));
     
-    // STRUCTS
-    struct Phone iphone = {"Apple", "iPhone Xr", 720.00f};
-    printf("%s - $%.2f\n", iphone.model, iphone.price);
+//    // STRUCTS
+//    struct Phone iphone = {"Apple", "iPhone Xr", 720.00f};
+//    printf("%s - $%.2f\n", iphone.model, iphone.price);
+    
+    // POINTERS
+    int number = 91;
+    int * pNumber = &number;
+    printf("%p\n", pNumber);
+    printf("%d\n", *pNumber);
+    
+    struct Shape rectangle = {4.0f, 7.5f};
+    printf("%.2f\n", calc(&rectangle));
     
     return 0 ;
 }
