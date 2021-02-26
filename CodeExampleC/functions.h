@@ -5,11 +5,12 @@
 //  Created by Begzod Bakhriddinov on 25/02/21.
 //
 
-//#ifndef functions_h
-//#define functions_h
-//
-//
-//#endif
+#ifndef functions_h
+#define functions_h
+
+
+#endif
+
 #include <stdio.h>
 
 void greeting() {

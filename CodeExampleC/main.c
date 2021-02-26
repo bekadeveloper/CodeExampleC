@@ -7,6 +7,7 @@
 
 #include <stdbool.h>
 #include "functions.h"
+#include "structs.h"
 
 int main() {
     
@@ -134,12 +135,16 @@ int main() {
 //
 //    printf("Min: %d\nMax: %d\n", min, max);
     
-    // FUNCTIONS (refer to 'functions.h')
-    greeting();
+//    // FUNCTIONS (refer to 'functions.h')
+//    greeting();
+//
+//    printf("%d\n", add(56, 12));
+//
+//    printf("%.2f\n", multiply(5, 9));
     
-    printf("%d\n", add(56, 12));
-    
-    printf("%.2f\n", multiply(5, 9));
+    // STRUCTS
+    struct Phone iphone = {"Apple", "iPhone Xr", 720.00f};
+    printf("%s - $%.2f\n", iphone.model, iphone.price);
     
     return 0 ;
 }
