@@ -159,8 +159,18 @@ int main() {
     FILE *file = fopen("test.txt", "w");
     
     fprintf(file, "Hello, World!\n");
-    
     fclose(file);
+    
+    FILE *file2 = fopen("test2.txt", "r");
+    
+    char line[100];
+    fgets(line, 100, file2);
+    printf("%s", line);
+    fgets(line, 100, file2);
+    printf("%s", line);
+    fgets(line, 100, file2);
+    printf("%s\n", line);
+    fclose(file2);
     
     return 0 ;
 }
