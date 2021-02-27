@@ -146,14 +146,21 @@ int main() {
 //    struct Phone iphone = {"Apple", "iPhone Xr", 720.00f};
 //    printf("%s - $%.2f\n", iphone.model, iphone.price);
     
-    // POINTERS
-    int number = 91;
-    int * pNumber = &number;
-    printf("%p\n", pNumber);
-    printf("%d\n", *pNumber);
+//    // POINTERS
+//    int number = 91;
+//    int * pNumber = &number;
+//    printf("%p\n", pNumber);
+//    printf("%d\n", *pNumber);
+//    
+//    struct Shape rectangle = {4.0f, 7.5f};
+//    printf("%.2f\n", calc(&rectangle));
     
-    struct Shape rectangle = {4.0f, 7.5f};
-    printf("%.2f\n", calc(&rectangle));
+    // WORKING WITH FILES
+    FILE *file = fopen("test.txt", "w");
+    
+    fprintf(file, "Hello, World!\n");
+    
+    fclose(file);
     
     return 0 ;
 }
